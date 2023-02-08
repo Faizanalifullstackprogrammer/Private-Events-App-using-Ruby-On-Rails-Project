@@ -1,0 +1,15 @@
+<div class="main-invite container-fluid p-3 d-flex justify-content-center w-50">
+    <h2>Invite User for the <span class="text-primary"><%= @event.title %> </span> Event!!</h2>
+</div>
+<div class=" user-invitation p-3 align-item-center bg-light w-50">
+    <% @users.each do |user| %>
+        <div class="d-flex p-3 m-3 align-items-center justify-content-between">
+            <div class="mx-2 font-weight-bold w-25">
+                <%= user.name %></td>
+            </div>
+            <div>
+                <%= invitation(user) %>
+            </div>
+        </div>
+    <% end %>
+</div>

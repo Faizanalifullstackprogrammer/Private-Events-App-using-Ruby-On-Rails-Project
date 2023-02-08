@@ -1,0 +1,64 @@
+<img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/sanmateoca/shutterstock_61104537504_8ef67d97-5056-a36a-0b9f5fc892eae781.jpg" alt="img" class="card-img-top img-show">
+<div class="main-event p-5 container">
+
+    <div class="right col-4 float-right ml-2">
+        <div class="card box p-3 mb-3">
+            <div class="date d-flex">
+                <span class="h3">
+                    <i class="far fa-calendar-check text-primary"></i>
+                    <%= @event.date %>
+                </span>  
+            </div>
+            <div class="date my-3"> 
+                <span>
+                    <i class="fas fa-map-marker-alt h-3 text-primary"></i>    
+                    <%= @event.location %>
+                </span>   
+            </div>
+
+            <div class="join-event">
+                <%= invitation_people %>
+            </div>
+        </div>
+
+        <div class="attendees card box p-3 mb-3">
+            <h3 class="text-uppercase font-weight-bold">List of attendees</h3>
+                <div class="list-attendees text-primary">
+                    <ul class="list-unstyled mt-1">
+                            <% @attendances.each do |attend| %>
+                                <li> 
+                                    <%= link_to attend.attendee.name, user_path(attend.attendee), class: "text-primary text-capitalize h5" %>
+                                    <hr>
+                                </li>
+                            <% end %>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="left col-7">
+
+        <div class="text-primary text-uppercase h3 font-weight-bold ">
+            <%= @event.title %>
+        </div>
+        
+        <div class="text">
+            <h3 class="mt-3 mb-1 h5">About Event</h3>
+            <%= @event.description %>
+        </div>
+
+        <hr>
+        <div class="my-3 d-flex align-items-center justify-content-between">
+            
+            <%= link_to "Back", events_path, class: "text-primary h5 "%>
+            <p class="h5 text-dark align-items-center mb-0"> <%= @event.creator.name %>
+            <i class="fas fa-user-circle"></i>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+

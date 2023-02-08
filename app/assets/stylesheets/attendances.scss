@@ -1,0 +1,28 @@
+// Place all the styles related to the Attendances controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main-users {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 5rem;
+  padding: 5rem;
+
+  .user {
+    width: 10%;
+  }
+
+  .button {
+    margin: 0 0 0 3rem;
+
+    .invite-button {
+      color: white;
+      background: #387bfe;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 10px;
+      text-align: center;
+    }
+  }
+}

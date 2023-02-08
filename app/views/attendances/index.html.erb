@@ -1,0 +1,11 @@
+<div class="banner">
+    Invite users To Attend Event
+</div>
+<div class="main-users bg-light">
+
+    <% @users.each do |user| %>
+    <ul>
+    <li><%= user.name %></li>
+    </ul>
+    <% end %>
+</div>

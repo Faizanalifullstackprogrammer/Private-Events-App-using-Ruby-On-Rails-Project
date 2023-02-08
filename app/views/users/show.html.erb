@@ -1,0 +1,66 @@
+
+<div class="author d-flex flex-column justify-content-center align-items-center h2 text-capitalize p-3 bg-light">
+    <img src="https://thewritelife.com/wp-content/uploads/2014/12/how-to-become-a-technical-writer.jpg" alt="author" class="author-img">
+    <a href="" class="mt-3 text-decoration-none">
+        <%= @user.name %>
+    </a>
+</div>
+
+<br >
+
+<div class="card box p-3 mb-3 float-right col-4 p-3 m-3">
+
+  <h1 class="text-uppercase text-primary justify-content-center d-flex  h4">Attended Events</h1>
+
+  <div aria-labelledby="nav-profile-tab">
+        <h3 class="h5 text-capitalize">Upcoming Events</h3>
+              <% @upcoming.each do |event| %>
+                <div class="d-flex flex-column my-3">
+                  <%= link_to event.title, event_path(event), class: "text-primary font-weight-bold h5 text-decoration-none"  %>
+                  <span class="text-uppercase text-danger mt-n2"><%= event.date %></span>
+                </div>                    
+              <% end %>
+              <hr>
+  </div>
+
+   <div aria-labelledby="nav-profile-tab border-top">
+        <h3 class="h5 text-capitalize">past Events</h3>
+              <% @past.each do |event| %>
+                    <div class="d-flex flex-column my-3">
+                        <%= link_to event.title, event_path(event), class: "text-primary font-weight-bold h5 text-decoration-none" %>
+
+                      <span class="text-uppercase text-danger mt-n2"><%= event.date %></span>
+                      </div>
+              <% end %>
+  </div>
+
+
+</div>
+
+
+<div class="created-event clearfix float-left col-7 p-3 m-3 bg-light">
+    <h1 class="text-uppercase text-primary ml-5 mb-n3 h3 font-weight-bold">Created Events</h1>
+        <div class="grid-post">
+        <% if @created_event.any? %>
+            <% @created_event.each do |e| %>
+              
+                  <div class="card box"> 
+                      <div class="card-body">
+                          <div class="card-title">
+                              <%= link_to e.title, event_path(e), class: 'h4 text-uppercase text-decoration-none post-title' %>
+                          </div>
+                          <div class="card-text post-body">
+                              <%= e.description %>
+                          </div>
+                      </div>
+                  </div>
+              
+            <% end %>
+        <% else %>
+            <div class="d-flex flex-column p-3 m-3">
+                <p>User has Not Created any Events</p>
+                <%= link_to "Create Event", new_event_path, class: "btn btn-primary w-75"  %>
+            </div>
+        <% end %>
+        </div>
+</div>

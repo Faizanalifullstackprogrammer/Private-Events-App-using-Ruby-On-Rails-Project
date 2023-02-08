@@ -54,20 +54,13 @@ Feel free to check the [issues page](../../issues).
 Give a ⭐️ if you like this project!
 
 
-## Authors
+## Author
 
+👤 **Mian Faizan Ali Full Stack Programmer**
 
-👤 **Divyesh Patel**
-
-- GitHub: [@Div685](https://github.com/Div685)
-- Twitter: [@div_685](https://twitter.com/div_685)
-- LinkedIn: [Divyesh Patel](https://www.linkedin.com/in/divyesh-daxa-patel)
-
-👤 **Shonibare Adewunmi**
-
-- GitHub: [@Adewunmi97](https://github.com/Adewunmi97)
-- Twitter: [@ShonibareC](https://twitter.com/ShonibareC)
-- LinkedIn: [Adewunmi Shonibare](https://www.linkedin.com/in/adewunmi-shonibare-a2a7b0200/)
+- GitHub: [@Faizanalifullstackprogrammer](https://github.com/Faizanalifullstackprogrammer)
+- Twitter: [@mianfaizanali](https://twitter.com/mianfaizanali)
+- LinkedIn: [Mianfaizanali](https://pk.linkedin.com/in/mianfaizanali)
 
 
 ## Acknowledgments

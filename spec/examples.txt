@@ -1,0 +1,21 @@
+example_id                             | status | run_time        |
+-------------------------------------- | ------ | --------------- |
+./spec/attendance_spec.rb[1:1:1]       | passed | 0.00685 seconds |
+./spec/attendance_spec.rb[1:1:2]       | passed | 0.006 seconds   |
+./spec/attendance_spec.rb[1:2:1:1]     | passed | 0.00493 seconds |
+./spec/attendance_spec.rb[1:2:2:1]     | passed | 0.00838 seconds |
+./spec/attendance_spec.rb[1:2:3]       | passed | 0.09583 seconds |
+./spec/controller/event_spec.rb[1:1:1] | passed | 18.67 seconds   |
+./spec/controller/user_spec.rb[1:1:1]  | passed | 7.9 seconds     |
+./spec/controller/user_spec.rb[1:2:1]  | passed | 1.08 seconds    |
+./spec/event_spec.rb[1:1:1]            | passed | 0.0076 seconds  |
+./spec/event_spec.rb[1:1:2]            | passed | 0.00765 seconds |
+./spec/event_spec.rb[1:1:3]            | passed | 0.00845 seconds |
+./spec/event_spec.rb[1:1:4]            | passed | 0.00888 seconds |
+./spec/event_spec.rb[1:2:1]            | passed | 0.01805 seconds |
+./spec/event_spec.rb[1:2:2]            | passed | 0.03903 seconds |
+./spec/event_spec.rb[1:2:3]            | passed | 0.01008 seconds |
+./spec/user_spec.rb[1:1:1]             | passed | 0.03928 seconds |
+./spec/user_spec.rb[1:1:2]             | passed | 0.00654 seconds |
+./spec/user_spec.rb[1:1:3]             | passed | 0.00374 seconds |
+./spec/user_spec.rb[1:2:1]             | passed | 0.01383 seconds |
